@@ -1,0 +1,53 @@
+@import "./src/App";
+
+.articles_wrapper {
+  padding: 100px 30px;
+  color: $color-third;
+
+  .articles_caption {
+    text-align: center;
+    @include fontSpaceTrans(400 30px $fontJ, 8px, uppercase);
+
+    @media (max-width: 590px) {
+      font: 400 24px "Josefin+Sans";
+    }
+  }
+
+  .articles_description {
+    text-align: center;
+    @include fontSpaceTrans(400 34px $fontJ, 8px, none);
+
+    @media (max-width: 590px) {
+      font: 400 24px "Josefin+Sans";
+    }
+  }
+
+  .articles_items {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    @include fontSpaceTrans(400 25px/30px $fontJ, 2px, none);
+    margin: 20px 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1085px) {
+      padding: 50px 0px;
+    }
+    & :global .ant-card {
+      border: none;
+    }
+
+    & :global .ant-card-actions {
+      background-color: $color-primary;
+
+      .anticon {
+        color: $color-secondary;
+      }
+    }
+
+    .articles_card {
+      width: 400px;
+      margin: 20px;
+    }
+  }
+}

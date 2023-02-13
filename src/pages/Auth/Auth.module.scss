@@ -1,0 +1,50 @@
+@import "./src/App";
+
+.auth_wrapper {
+  padding: 100px;
+  color: $color-third;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .auth_description {
+    text-align: center;
+    @include fontSpaceTrans(400 38px $fontJ, 5px, uppercase);
+  }
+
+  .auth_form {
+    padding: 50px 50px;
+    @include fontSpaceTrans(400 25px/30px $fontJ, 2px, none);
+    max-width: 500px;
+    align-self: center;
+
+    .auth_form_label {
+      color: $color-third!important;
+      @include fontSpaceTrans(400 25px/30px $fontJ, 2px, none);
+    }
+
+    .auth_form_input {
+      height: 40px;
+      @include fontSpaceTrans(400 25px/30px $fontJ, 2px, none);
+    }
+
+    .auth_wrapper_submitBtn{
+      padding: 50px 0;
+      text-align: center;
+
+      .auth_submitBtn {
+        width: 200px;
+        height: 50px;
+        background-color: $color-primary;
+        color: $color-secondary;
+        @include fontSpaceTrans(400 25px/30px $fontJ, 1px, uppercase);
+        text-align: center;
+        border: $color-primary;
+
+        &:hover {
+          background-color: rgba(255, 140, 0, 0.8);
+        }
+      }
+    }
+  }
+}

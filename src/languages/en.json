@@ -1,0 +1,40 @@
+{
+  "header": {
+    "caption": "Time portal",
+    "signOut": "Sign out"
+  },
+  "home": {
+    "welcomeText": "Welcome\n\n the home page of Time Portal",
+    "mainText": "The physical nature of time is addressed by general relativity with respect to events in spacetime. Examples of events are the collision of two particles, the explosion of a supernova, or the arrival of a rocket ship. Every event can be assigned four numbers representing its time and position (the event's coordinates). However, the numerical values are different for different observers. In general relativity, the question of what time it is now only has meaning relative to a particular observer. Distance and time are intimately related, and the time required for light to travel a specific distance is the same for all observers, as first publicly demonstrated by Michelson and Morley. General relativity does not address the nature of time for extremely small intervals where quantum mechanics holds. At this time, there is no generally accepted theory of quantum general relativity \n\n Time is one of the seven fundamental physical quantities in both the International System of Units (SI) and International System of Quantities. The SI base unit of time is the second, which is defined by measuring the electronic transition frequency of caesium atoms. Time is used to define other quantities, such as velocity, so defining time in terms of such quantities would result in circularity of definition.[16] An operational definition of time, wherein one says that observing a certain number of repetitions of one or another standard cyclical event (such as the passage of a free-swinging pendulum) constitutes one standard unit such as the second, is highly useful in the conduct of both advanced experiments and everyday affairs of life. To describe observations of an event, a location (position in space) and time are typically noted.\n\nWikipedia"
+  },
+  "articles": {
+    "caption": "Articles",
+    "description": "The most exciting stories about the time ever"
+  },
+  "tracker": {
+    "caption": "Time tracker",
+    "description": "Here you can find the information about the time spent on every page \n\n You can navigate between the pages and your time will be saved ",
+    "page": "Page",
+    "spentTime": "Total time spent, mm:ss",
+    "home": "Home",
+    "articles": "Articles",
+    "tracker": "Tracker",
+    "about": "About"
+  },
+  "about": {
+    "caption": "About\n\n The main features of this application",
+    "description": "- When the user loggs in, the application remembers the current user, since we're going to track the time he spends on each page of the app.\n\n- After logging in, the user is redirected to a home page, from where he can navigate between different pages\n,\n- One of the pages is the page for displaying the tracked time. The page has a table that has a row for each of the pages which shows the time the user\nhas spent on that page. So while the user navigates between the different pages of the app, it keeps track how much time he spent on each of them.\nThe table includes the page that has the table with the times.\n\n- When the user closes the app, the time stops being tracked. There is a logout button, that also stops tracking the user's time and takes you back to the login page.\n\n- If a user logs in at a later time, with the same login info (username), his time tracking continues from last time.\n\n- If another user logs in, his time is tracked separately.\n\n- The time is updated live, while we're on the time tracking page."
+  },
+  "auth": {
+    "description": "Sign in ",
+    "userNamePlaceholder": "Username",
+    "validationMessage": "Please input your username!",
+    "submit": "Submit"
+  },
+  "notFound": {
+    "description": "This page is not found"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

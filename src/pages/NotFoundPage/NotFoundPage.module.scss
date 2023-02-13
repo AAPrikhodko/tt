@@ -1,0 +1,11 @@
+@import "./src/App";
+
+.notFound_wrapper {
+  padding: 100px;
+  color: $color-third;
+
+  .notFound_description {
+    text-align: center;
+    @include fontSpaceTrans(400 38px $fontJ, 8px, uppercase);
+  }
+}

@@ -1,0 +1,64 @@
+@import "./src/App";
+
+.tracker_wrapper {
+  padding: 70px;
+  color: $color-third;
+
+  .tracker_caption {
+    text-align: center;
+    @include fontSpaceTrans(400 38px $fontJ, 8px, uppercase);
+  }
+
+  .tracker_table_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    .tracker_description {
+      padding: 20px 0;
+      text-align: center;
+      @include fontSpaceTrans(400 38px $fontJ, 4px, none);
+      width: 50%;
+      white-space: pre-line;
+
+      @media (max-width: 1470px) {
+        font: 400 30px "Josefin+Sans";
+      }
+
+      @media (max-width: 935px) {
+        font: 400 22px "Josefin+Sans";
+      }
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+
+    .tracker_table {
+      & :global {
+        min-width: 40%;
+
+        .ant-table-thead {
+          .ant-table-cell {
+            background-color: $color-primary;
+            color: $color-secondary;
+            @include fontSpaceTrans(600 12px/15px $fontM, 1px, uppercase);
+            text-align: center;
+          }
+        }
+
+        .ant-table-tbody {
+          .ant-table-cell {
+            @include fontSpaceTrans(400 14px $fontM, 0, none);
+            color: $color-secondary;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

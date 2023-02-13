@@ -1,0 +1,26 @@
+@import "./src/App";
+
+.about_wrapper {
+  padding: 100px;
+  color: $color-third;
+
+  @media (max-width: 650px) {
+    padding: 100px 20px;
+  }
+
+  .about_caption {
+    text-align: center;
+    @include fontSpaceTrans(400 38px $fontJ, 8px, uppercase);
+    white-space: pre-line;
+
+    @media (max-width: 650px) {
+      font: 400 32px "Josefin+Sans";
+    }
+  }
+
+  .about_description {
+    text-align: justify;
+    @include fontSpaceTrans(400 28px $fontJ, 1px, none);
+    white-space: pre-line;
+  }
+}

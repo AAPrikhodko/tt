@@ -1,0 +1,30 @@
+@import "./src/App";
+
+.home_wrapper {
+  padding: 100px;
+  color: $color-third;
+
+  @media (max-width: 650px) {
+    padding: 100px 20px;
+  }
+
+  .home_welcomeText {
+    text-align: center;
+    @include fontSpaceTrans(400 38px $fontJ, 8px, uppercase);
+    white-space: pre-line;
+
+    @media (max-width: 650px) {
+      font: 400 32px "Josefin+Sans";
+    }
+  }
+
+  .home_mainTextText {
+    text-align: justify;
+    @include fontSpaceTrans(400 28px/30px $fontJ, 2px, none);
+    white-space: pre-line;
+
+    @media (max-width: 1085px) {
+      padding: 50px 0;
+    }
+  }
+}
